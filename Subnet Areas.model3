@@ -1,0 +1,852 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="grass7:v.net.alloc_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="grass7:v.net.alloc" type="QString" name="alg_id"/>
+      <Option value="v.net.alloc" type="QString" name="component_description"/>
+      <Option value="234.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="169.33333333333331" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="grass7:v.net.alloc_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="false" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="-g">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_MIN_AREA_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0.0001" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_OUTPUT_TYPE_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_REGION_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_SNAP_TOLERANCE_PARAMETER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="-1" type="double" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_VECTOR_DSCO">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_VECTOR_EXPORT_NOCAT">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="GRASS_VECTOR_LCO">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="arc_backward_column">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="arc_column">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="arc_type">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option value="0" type="int"/>
+              <Option value="1" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="center_cats">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1-100000" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="input">
+          <Option type="Map">
+            <Option value="roads" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="node_column">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="points">
+          <Option type="Map">
+            <Option value="points" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="threshold">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="500" type="double" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:dissolve_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:dissolve" type="QString" name="alg_id"/>
+      <Option value="Dissolve" type="QString" name="component_description"/>
+      <Option value="1701.7400622752198" type="double" name="component_pos_x"/>
+      <Option value="1617.6211039988843" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:dissolve_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="final_areas">
+          <Option value="native:dissolve_1" type="QString" name="child_id"/>
+          <Option value="final_areas" type="QString" name="component_description"/>
+          <Option value="1916.0364648356208" type="double" name="component_pos_x"/>
+          <Option value="1692.802398293065" type="double" name="component_pos_y"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="final_areas" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option value="cat" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:voronoipolygons_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:explodelines_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:explodelines" type="QString" name="alg_id"/>
+      <Option value="Explode lines" type="QString" name="component_description"/>
+      <Option value="274.6666666666667" type="double" name="component_pos_x"/>
+      <Option value="298.6666666666667" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:explodelines_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="grass7:v.net.alloc_1" type="QString" name="child_id"/>
+            <Option value="output" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractvertices_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:extractvertices" type="QString" name="alg_id"/>
+      <Option value="Extract vertices" type="QString" name="component_description"/>
+      <Option value="338.66666666666663" type="double" name="component_pos_x"/>
+      <Option value="402.6666666666667" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:extractvertices_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="false" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:explodelines_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:extractvertices_2">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:extractvertices" type="QString" name="alg_id"/>
+      <Option value="verticies2" type="QString" name="component_description"/>
+      <Option value="1090.9947276756272" type="double" name="component_pos_x"/>
+      <Option value="1157.3333333333333" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:extractvertices_2" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:geometrybyexpression_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:geometrybyexpression_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:geometrybyexpression" type="QString" name="alg_id"/>
+      <Option value="Geometry by expression" type="QString" name="component_description"/>
+      <Option value="1026.6666666666663" type="double" name="component_pos_x"/>
+      <Option value="1057.333333333333" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:geometrybyexpression_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="EXPRESSION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="geom_from_wkt('Linestring('||&quot;x1&quot;||' '||&quot;y1&quot;||','||&quot;x0&quot;||' '||&quot;y0&quot;||')')" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_5" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OUTPUT_GEOMETRY">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="WITH_M">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="WITH_Z">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="native:removeduplicatesbyattribute_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:removeduplicatesbyattribute" type="QString" name="alg_id"/>
+      <Option value="Delete duplicates by attribute" type="QString" name="component_description"/>
+      <Option value="1366.580347718164" type="double" name="component_pos_x"/>
+      <Option value="1428.7405282125296" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="native:removeduplicatesbyattribute_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option value="cat_unique" type="QString"/>
+              <Option value="x" type="QString"/>
+              <Option value="y" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_7" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="outlen" type="QString" name="component_description"/>
+      <Option value="790.6666666666665" type="double" name="component_pos_x"/>
+      <Option value="578.6666666666666" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:fieldcalculator_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="20" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="outlen" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="8" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="if(&quot;cat_unique&quot; > 1, length($geometry) - (length($geometry) * 0.005), length($geometry))" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:joinbylocationsummary_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_2">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="x0" type="QString" name="component_description"/>
+      <Option value="794.6666666666665" type="double" name="component_pos_x"/>
+      <Option value="669.3333333333333" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:fieldcalculator_2" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="x0" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="3" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="x(centroid($geometry)) - &#xa;    (outlen/2) * sin(radians(angle_at_vertex($geometry, 0)))" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_3">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="y0" type="QString" name="component_description"/>
+      <Option value="797.333333333333" type="double" name="component_pos_x"/>
+      <Option value="761.3333333333333" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:fieldcalculator_3" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="y0" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="3" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="y(centroid($geometry)) - &#xa;    (outlen/2) * cos(radians(angle_at_vertex($geometry, 0)))&#xa;" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_2" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_4">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="x1" type="QString" name="component_description"/>
+      <Option value="802.6666666666663" type="double" name="component_pos_x"/>
+      <Option value="854.6666666666665" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:fieldcalculator_4" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="x1" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="3" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="x(centroid($geometry)) + &#xa;    (outlen/2) * sin(radians(angle_at_vertex($geometry, 0)))&#xa;" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_3" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_5">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="y1" type="QString" name="component_description"/>
+      <Option value="806.6666666666663" type="double" name="component_pos_x"/>
+      <Option value="957.3333333333331" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:fieldcalculator_5" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="y1" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="3" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="y(centroid($geometry)) + &#xa;    (outlen/2) * cos(radians(angle_at_vertex($geometry, 0)))" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_4" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_6">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="x" type="QString" name="component_description"/>
+      <Option value="1190.2695504989035" type="double" name="component_pos_x"/>
+      <Option value="1246.2139091196873" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:fieldcalculator_6" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="x" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="round(x($geometry),1)" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:extractvertices_2" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:fieldcalculator_7">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:fieldcalculator" type="QString" name="alg_id"/>
+      <Option value="y" type="QString" name="component_description"/>
+      <Option value="1189.4695553993688" type="double" name="component_pos_x"/>
+      <Option value="1333.5059957326641" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:fieldcalculator_7" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="FIELD_LENGTH">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="10" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="y" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_PRECISION">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="1" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FIELD_TYPE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="FORMULA">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="round(y($geometry),1)" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:fieldcalculator_6" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NEW_FIELD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="true" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:joinbylocationsummary_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:joinbylocationsummary" type="QString" name="alg_id"/>
+      <Option value="Join attributes by location (summary)" type="QString" name="component_description"/>
+      <Option value="607.0119914653279" type="double" name="component_pos_x"/>
+      <Option value="439.29208661297645" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:joinbylocationsummary_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="false" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="DISCARD_NONMATCHING">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="false" type="bool" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:explodelines_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN">
+          <Option type="Map">
+            <Option value="native:extractvertices_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="JOIN_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option value="cat" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="PREDICATE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option value="0" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="SUMMARIES">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="List" name="static_value">
+              <Option value="1" type="int"/>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:voronoipolygons_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:voronoipolygons" type="QString" name="alg_id"/>
+      <Option value="Voronoi polygons" type="QString" name="component_description"/>
+      <Option value="1503.9789107025103" type="double" name="component_pos_x"/>
+      <Option value="1522.386571519018" type="double" name="component_pos_y"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:voronoipolygons_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="BUFFER">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:removeduplicatesbyattribute_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option type="Map" name="modelVariables">
+    <Option value="" type="QString" name="@cat_unique"/>
+  </Option>
+  <Option value="" type="QString" name="model_group"/>
+  <Option value="Subnet Areas" type="QString" name="model_name"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="native:dissolve_1:final_areas">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option value="final_areas" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="native:dissolve_1:final_areas" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="points">
+      <Option type="List" name="data_types">
+        <Option value="0" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Points" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="points" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="roads">
+      <Option type="List" name="data_types">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option value="Roads" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option name="metadata"/>
+      <Option value="roads" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+  </Option>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="points">
+      <Option value="points" type="QString" name="component_description"/>
+      <Option value="120" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="points" type="QString" name="name"/>
+    </Option>
+    <Option type="Map" name="roads">
+      <Option value="roads" type="QString" name="component_description"/>
+      <Option value="340" type="double" name="component_pos_x"/>
+      <Option value="60" type="double" name="component_pos_y"/>
+      <Option value="roads" type="QString" name="name"/>
+    </Option>
+  </Option>
+</Option>
