@@ -10,3 +10,8 @@ The python script does not seem to work due to temporary layers - needs more inv
 
 
 ![Image description](https://raw.githubusercontent.com/mattmarotta/QGIS-Subnet-Areas/master/Subnet%20Areas.png)
+
+Credits/References
+https://gis.stackexchange.com/questions/209419/how-to-compute-areas-of-influence-in-qgis
+https://gis.stackexchange.com/questions/297002/programmatically-changing-line-lengths-in-qgis
+https://gis.stackexchange.com/questions/307410/change-start-end-points-of-a-line-with-field-attributes#comment497542_307418
