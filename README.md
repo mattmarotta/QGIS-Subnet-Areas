@@ -7,3 +7,6 @@ The .model3 file is confirmed to be working. The output may load but look blank 
 The python script does not seem to work due to temporary layers - needs more investigation.
 
 ![Image description](https://i.redd.it/hxx713akwzx41.png)
+
+
+![Image description](https://raw.githubusercontent.com/mattmarotta/QGIS-Subnet-Areas/master/Subnet%20Areas.png)
