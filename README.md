@@ -4,7 +4,7 @@ Input points and roads in the same co-ordinate system and get a resulting areas 
 
 Mainly relies on GRASS algorithm v.net.alloc which does a network allocation (allocates roads to closest points) essentially creating subnetworks. These subnetworks are then used to create areas, hence this model's name "Subnet Areas".
 
-Some rough notes on the methodology: https://www.reddit.com/r/QGIS/comments/gimg5z/introducing_my_subnet_areas_model_my_first_model/
+Methodology: https://github.com/mattmarotta/QGIS-Subnet-Areas/blob/master/methodology.md
 
 ## Important notes on how to use
 
