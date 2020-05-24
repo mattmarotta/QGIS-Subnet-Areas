@@ -136,14 +136,14 @@
       <Option name="dependencies"/>
       <Option name="id" type="QString" value="native:dissolve_1"/>
       <Option name="outputs" type="Map">
-        <Option name="final_areas" type="Map">
+        <Option name="subnet_areas" type="Map">
           <Option name="child_id" type="QString" value="native:dissolve_1"/>
-          <Option name="component_description" type="QString" value="final_areas"/>
-          <Option name="component_pos_x" type="double" value="1916.0364648356208"/>
-          <Option name="component_pos_y" type="double" value="1692.802398293065"/>
+          <Option name="component_description" type="QString" value="subnet_areas"/>
+          <Option name="component_pos_x" type="double" value="1901.7400622752198"/>
+          <Option name="component_pos_y" type="double" value="1662.6211039988843"/>
           <Option name="default_value" type="invalid"/>
           <Option name="mandatory" type="bool" value="false"/>
-          <Option name="name" type="QString" value="final_areas"/>
+          <Option name="name" type="QString" value="subnet_areas"/>
           <Option name="output_name" type="QString" value="OUTPUT"/>
         </Option>
       </Option>
@@ -153,7 +153,7 @@
         <Option name="FIELD" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="List">
+            <Option name="static_value" type="StringList">
               <Option type="QString" value="cat"/>
             </Option>
           </Option>
@@ -823,14 +823,14 @@
       <Option name="parameter_type" type="QString" value="vectorDestination"/>
       <Option name="supports_non_file_outputs" type="bool" value="false"/>
     </Option>
-    <Option name="native:dissolve_1:final_areas" type="Map">
+    <Option name="native:dissolve_1:subnet_areas" type="Map">
       <Option name="create_by_default" type="bool" value="true"/>
       <Option name="data_type" type="int" value="-1"/>
       <Option name="default" type="invalid"/>
-      <Option name="description" type="QString" value="final_areas"/>
+      <Option name="description" type="QString" value="subnet_areas"/>
       <Option name="flags" type="int" value="0"/>
       <Option name="metadata"/>
-      <Option name="name" type="QString" value="native:dissolve_1:final_areas"/>
+      <Option name="name" type="QString" value="native:dissolve_1:subnet_areas"/>
       <Option name="parameter_type" type="QString" value="sink"/>
       <Option name="supports_non_file_outputs" type="bool" value="true"/>
     </Option>

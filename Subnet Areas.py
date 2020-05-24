@@ -2,18 +2,18 @@
 Subnet Areas
 v0.2
 By Matt Marotta
-2020-05-11
+2020-05-24
 With QGIS : 31202
 
 This script takes a road and point layer and creates areas that are closest to the points.
 
 Requirements:
-1. Always run these from the Processing Toolbox, not the model editor. In the Processing toolbox, 
-click the gears icon and select "Add Model to Toolbox", or the python icon and select "Add Script 
+1. Always run these from the Processing Toolbox, not the model editor. In the Processing toolbox,
+click the gears icon and select "Add Model to Toolbox", or the python icon and select "Add Script
 to Toolbox". Then just load in the model3/python file.
 
-2. When running the python script, the "network_allocation" must be saved to a file. Temporary 
-Layer will cause the model execution to fail.
+2. When running the model from either the model file or python script, the "network_allocation"
+output must be saved to a file. Temporary Layer will cause the model execution to fail.
 
 3. Output may load but look blank - you need to change the CRS of the layer in the later properties.
 
@@ -34,7 +34,7 @@ class SubnetAreas(QgsProcessingAlgorithm):
         self.addParameter(QgsProcessingParameterVectorLayer('points', 'Points', types=[QgsProcessing.TypeVectorPoint], defaultValue=None))
         self.addParameter(QgsProcessingParameterVectorLayer('roads', 'Roads', types=[QgsProcessing.TypeVectorLine], defaultValue=None))
         self.addParameter(QgsProcessingParameterVectorDestination('Network_allocation', 'network_allocation', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, defaultValue=None))
-        self.addParameter(QgsProcessingParameterFeatureSink('Final_areas', 'final_areas', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, defaultValue=None))
+        self.addParameter(QgsProcessingParameterFeatureSink('Subnet_areas', 'subnet_areas', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, defaultValue=None))
 
     def processAlgorithm(self, parameters, context, model_feedback):
         # Use a multi-step feedback, so that individual child algorithm progress reports are adjusted for the
@@ -281,10 +281,10 @@ class SubnetAreas(QgsProcessingAlgorithm):
         alg_params = {
             'FIELD': ['cat'],
             'INPUT': outputs['VoronoiPolygons']['OUTPUT'],
-            'OUTPUT': parameters['Final_areas']
+            'OUTPUT': parameters['Subnet_areas']
         }
         outputs['Dissolve'] = processing.run('native:dissolve', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
-        results['Final_areas'] = outputs['Dissolve']['OUTPUT']
+        results['Subnet_areas'] = outputs['Dissolve']['OUTPUT']
         return results
 
     def name(self):
