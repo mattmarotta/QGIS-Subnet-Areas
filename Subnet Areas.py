@@ -1,20 +1,21 @@
 """
-
 Subnet Areas
-v0.1
+v0.2
 By Matt Marotta
 2020-05-11
-
-This script takes a road and point layer and creates
-areas that are closest to the points.
-
 With QGIS : 31202
 
-Credits
-https://gis.stackexchange.com/questions/209419/how-to-compute-areas-of-influence-in-qgis
-https://gis.stackexchange.com/questions/297002/programmatically-changing-line-lengths-in-qgis
-https://gis.stackexchange.com/questions/307410/change-start-end-points-of-a-line-with-field-attributes#comment497542_307418
+This script takes a road and point layer and creates areas that are closest to the points.
 
+Requirements:
+1. Always run these from the Processing Toolbox, not the model editor. In the Processing toolbox, 
+click the gears icon and select "Add Model to Toolbox", or the python icon and select "Add Script 
+to Toolbox". Then just load in the model3/python file.
+
+2. When running the python script, the "network_allocation" must be saved to a file. Temporary 
+Layer will cause the model execution to fail.
+
+3. Output may load but look blank - you need to change the CRS of the layer in the later properties.
 
 """
 
@@ -22,6 +23,7 @@ from qgis.core import QgsProcessing
 from qgis.core import QgsProcessingAlgorithm
 from qgis.core import QgsProcessingMultiStepFeedback
 from qgis.core import QgsProcessingParameterVectorLayer
+from qgis.core import QgsProcessingParameterVectorDestination
 from qgis.core import QgsProcessingParameterFeatureSink
 import processing
 
@@ -31,6 +33,7 @@ class SubnetAreas(QgsProcessingAlgorithm):
     def initAlgorithm(self, config=None):
         self.addParameter(QgsProcessingParameterVectorLayer('points', 'Points', types=[QgsProcessing.TypeVectorPoint], defaultValue=None))
         self.addParameter(QgsProcessingParameterVectorLayer('roads', 'Roads', types=[QgsProcessing.TypeVectorLine], defaultValue=None))
+        self.addParameter(QgsProcessingParameterVectorDestination('Network_allocation', 'network_allocation', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, defaultValue=None))
         self.addParameter(QgsProcessingParameterFeatureSink('Final_areas', 'final_areas', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, defaultValue=None))
 
     def processAlgorithm(self, parameters, context, model_feedback):
@@ -58,9 +61,10 @@ class SubnetAreas(QgsProcessingAlgorithm):
             'node_column': '',
             'points': parameters['points'],
             'threshold': 500,
-            'output': QgsProcessing.TEMPORARY_OUTPUT
+            'output': parameters['Network_allocation']
         }
         outputs['Vnetalloc'] = processing.run('grass7:v.net.alloc', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+        results['Network_allocation'] = outputs['Vnetalloc']['output']
 
         feedback.setCurrentStep(1)
         if feedback.isCanceled():
@@ -204,12 +208,12 @@ class SubnetAreas(QgsProcessingAlgorithm):
         if feedback.isCanceled():
             return {}
 
-        # verticies2
+        # Extract vertices 2
         alg_params = {
             'INPUT': outputs['GeometryByExpression']['OUTPUT'],
             'OUTPUT': QgsProcessing.TEMPORARY_OUTPUT
         }
-        outputs['Verticies2'] = processing.run('native:extractvertices', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+        outputs['ExtractVertices2'] = processing.run('native:extractvertices', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
 
         feedback.setCurrentStep(11)
         if feedback.isCanceled():
@@ -222,7 +226,7 @@ class SubnetAreas(QgsProcessingAlgorithm):
             'FIELD_PRECISION': 1,
             'FIELD_TYPE': 0,
             'FORMULA': 'round(x($geometry),1)',
-            'INPUT': outputs['Verticies2']['OUTPUT'],
+            'INPUT': outputs['ExtractVertices2']['OUTPUT'],
             'NEW_FIELD': True,
             'OUTPUT': QgsProcessing.TEMPORARY_OUTPUT
         }
