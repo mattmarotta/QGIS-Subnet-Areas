@@ -9,7 +9,7 @@ Some rough notes on the methodology: https://www.reddit.com/r/QGIS/comments/gimg
 ## Important notes on how to use
 
 1. Always run these from the Processing Toolbox, not the model editor. In the Processing toolbox, click the gears icon and select "Add Model to Toolbox", or the python icon and select "Add Script to Toolbox". Then just load in the model3/python file.
-2. When running the python script, the "network_allocation" must be saved to a file. Temporary Layer will cause the model execution to fail.
+2. When running the model from either the model file or python script, the "network_allocation" output must be saved to a file. Temporary Layer will cause the model execution to fail.
 3. Output may load but look blank - you need to change the CRS of the layer in the later properties.
 
 ## Images
@@ -27,6 +27,7 @@ Some rough notes on the methodology: https://www.reddit.com/r/QGIS/comments/gimg
 - Figure out how to incorporate road traffic (other tools out there can do this, such as Alteryx)
 - Improve the documentation with screenshots, more detailed methodology
 - Consider turning this into a plugin
+- Fix projection issue - v.net.alloc output does not output the same as final areas
 
 ## References
 
@@ -48,7 +49,7 @@ I could not for the life of me figure out why I couldn't change the precision in
 
 https://gis.stackexchange.com/questions/310148/pyqgis-processing-memory-not-found
 
-When I tried to run this model as a python script, it would just fail very early on using v.net.alloc. Confirms that grass in python cannot output to temporary layer.
+When I tried to run this model as a python script, it would just fail very early on using v.net.alloc. Confirms that grass in python cannot output to temporary layer. It also must be output to a permanent file when running the model file.
 
 https://gis.stackexchange.com/questions/321297/qgis-crashes-when-running-script-from-processing-script-editor
 
