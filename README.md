@@ -12,7 +12,7 @@ Some rough notes on the methodology: https://www.reddit.com/r/QGIS/comments/gimg
 2. When running the python script, the "network_allocation" must be saved to a file. Temporary Layer will cause the model execution to fail.
 3. Output may load but look blank - you need to change the CRS of the layer in the later properties.
 
-
+## Images
 
 ![QGIS Subnet Areas output](https://i.redd.it/hxx713akwzx41.png)
 
