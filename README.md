@@ -28,6 +28,7 @@ Some rough notes on the methodology: https://www.reddit.com/r/QGIS/comments/gimg
 - Improve the documentation with screenshots, more detailed methodology
 - Consider turning this into a plugin
 - Fix projection issue - v.net.alloc output does not output the same as final areas
+- Add option to change tolerance for v.net.alloc to join points to roads
 
 ## References
 
